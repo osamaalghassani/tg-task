@@ -1,0 +1,92 @@
+/*Global Rules*/
+@import url(//db.onlinewebfonts.com/c/b86c0f3afb7b6eb1952be1d4c753140c?family=Al-Jazeera-Arabic-Regular);
+:root{
+  --main-color:#fbd675;
+  --font-color:#ebebeb;
+  --footer-color:#f8f8f8;
+  --icon-color:#b1b1b1;
+}
+ul{
+  list-style: none;
+}
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+*{
+  font-family : 'Al-Jazeera-Arabic-Regular';
+
+}
+/*Global Rules*/
+
+.landing{
+  background-image: url("../public/images/Map.svg");
+  background-repeat: no-repeat;
+  background-position: left 0 top 5rem;
+  height:100vh ;
+  margin-bottom: 5rem;
+}
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1250px;
+}
+.landing-area{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing-area .text{
+  font-size: 50px;
+
+}
+ .apps-icon{
+display: flex;
+gap: 1rem;
+justify-content: flex-end;
+}
+.apps-icon img{
+  cursor: pointer;
+}
+footer{
+  background-color: var(--footer-color);
+ 
+}
+footer .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 74px;
+
+}
+footer .left ,footer .right{
+  display: flex; 
+align-items: center;
+gap:1rem ;
+}
+
+footer .left .icons{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+  footer .left .icons img{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+footer .left .icons img:hover{
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 var(--main-color);border-radius: 50%;
+}
+footer .right .politics{
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+
+}
+footer .right .politics:hover{
+  cursor: pointer;
+  text-shadow:  2px 2px var(--main-color);
+
+}
+
